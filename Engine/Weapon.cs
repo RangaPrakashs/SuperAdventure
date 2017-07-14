@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Engine
+{
+    class Weapon : Item
+    {
+        public int MinimumDamage { get; set; }
+        public int MaximumDamage { get; set; }
+
+        public Weapon(int id, string name, string namePlural, int minimumDamage, int maxmimumDamage) :base(id,name,namePlural)
+        {
+            this.MinimumDamage = minimumDamage;
+            this.MaximumDamage = maxmimumDamage;
+        }
+    }
+}

@@ -17,6 +17,7 @@ namespace GameTest
         public Form1()
         {
             InitializeComponent();
+            _player = new Player(10, 10, 20, 0, 1);
             _player.CurrentHitPoints = 10;
             _player.MaximumHitPoints = 10;
             _player.Gold = 20;

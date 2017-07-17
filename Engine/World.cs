@@ -11,7 +11,7 @@ namespace Engine
         public static readonly List<Item> items = new List<Item>();
         public static readonly List<Monster> Monster = new List<Monster>();
         public static readonly List<Quest> Quests = new List<Quest>();
-        public static readonly List<Location> Location = new List<Location>();
+        public static readonly List<Location> Location = new List<Location>(); // static Lists
 
         public const int ITEM_ID_RUSTY_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
@@ -156,6 +156,27 @@ namespace Engine
             alchemistHut.LocationToSouth = townSquare;
             alchemistHut.LocationToNorth = alchemistsGarden;
             alchemistsGarden.LocationToSouth = alchemistHut;
+          
+
+            guardPost.LocationToEast = bridge;
+            guardPost.LocationToWest = townSquare;
+
+            bridge.LocationToWest = guardPost;
+            bridge.LocationToEast = spiderField;
+
+            spiderField.LocationToWest = bridge;
+
+            //ADD the Locations to the static List
+            Location.Add(home);
+            Location.Add(townSquare);
+            Location.Add(guardPost);
+            Location.Add(guardPost);
+            Location.Add(alchemistHut);
+            Location.Add(alchemistsGarden);
+            Location.Add(farmhouse);
+            Location.Add(farmersField);
+            Location.Add(bridge);
+            Location.Add(spiderField);
 
 
 

@@ -29,7 +29,6 @@ namespace GameTest
             lblExp.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
 
-            Location location = new Location(1,"Home", "This is your Home!");
 
         }
 

@@ -49,6 +49,7 @@
             this.rtbMessages = new System.Windows.Forms.RichTextBox();
             this.dgvInventory = new System.Windows.Forms.DataGridView();
             this.dgvQuest = new System.Windows.Forms.DataGridView();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuest)).BeginInit();
             this.SuspendLayout();
@@ -247,11 +248,22 @@
             this.dgvQuest.Size = new System.Drawing.Size(312, 189);
             this.dgvQuest.TabIndex = 20;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(789, 611);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 21;
+            this.btnExit.Text = "Quit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 727);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dgvQuest);
             this.Controls.Add(this.dgvInventory);
             this.Controls.Add(this.rtbMessages);
@@ -305,6 +317,7 @@
         private System.Windows.Forms.RichTextBox rtbMessages;
         private System.Windows.Forms.DataGridView dgvInventory;
         private System.Windows.Forms.DataGridView dgvQuest;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
